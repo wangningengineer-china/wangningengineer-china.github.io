@@ -1,27 +1,303 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>App Support Center</title>
-        <link rel="stylesheet" href="/styles.css" />
-    </head>
-    <body>
-        <main class="container">
-            <h1>App Support Center</h1>
-            <p class="small">Support & Privacy Policy pages for my apps.</p>
 
-            <div class="card">
-                <h2>Dial Indicator Helper</h2>
-                <div class="nav">
-                    <a href="/dial-indicator-helper/support.html">Support</a>
-                    <a href="/dial-indicator-helper/privacy.html">Privacy Policy</a>
+        <title>Dial Indicator Helper — Dial, Bore Gauge & Test Indicator (iOS)</title>
+        <meta
+            name="description"
+            content="Dial Indicator Helper is an offline iPhone utility that simulates dial, bore gauge, and test indicator workflows: set zero, record readings, compute range/average/straightness/runout, and switch between imperial & metric."
+        />
+        <link rel="canonical" href="https://wangningengineer-china.github.io/" />
+
+        <meta name="theme-color" content="#0b1221" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png?v=20260121" />
+        <link rel="icon" href="favicon-120.png?v=20260121" type="image/png" sizes="120x120" />
+        <link rel="icon" href="favicon-58.png?v=20260121" type="image/png" sizes="58x58" />
+        <link rel="icon" href="favicon-40.png?v=20260121" type="image/png" sizes="40x40" />
+
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Dial Indicator Helper" />
+        <meta
+            property="og:description"
+            content="Offline dial indicator helper for iPhone: record readings, compute runout & straightness, and support dial/bore/test modes."
+        />
+        <meta property="og:url" content="https://wangningengineer-china.github.io/" />
+        <meta property="og:image" content="https://wangningengineer-china.github.io/assets/dial-hero-illustration.webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <link rel="stylesheet" href="landing.css" />
+
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "SoftwareApplication",
+                "name": "Dial Indicator Helper",
+                "operatingSystem": "iOS",
+                "applicationCategory": "UtilitiesApplication",
+                "url": "https://wangningengineer-china.github.io/",
+                "downloadUrl": "https://apps.apple.com/us/app/dial-indicator-helper/id6756481704",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "0",
+                    "priceCurrency": "USD"
+                }
+            }
+        </script>
+    </head>
+
+    <body>
+        <a class="skip" href="#main">Skip to content</a>
+
+        <header class="topbar">
+            <div class="container">
+                <div class="row">
+                    <a class="brand" href="/" aria-label="Dial Indicator Helper">
+                        <span class="logo" aria-hidden="true"></span>
+                        <b>Dial Indicator Helper</b>
+                    </a>
+                    <nav class="nav" aria-label="Primary">
+                        <a href="#features">Features</a>
+                        <a href="#tutorial">Tutorial</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#download">Download</a>
+                        <a href="/dial-indicator-helper/support.html">Support</a>
+                        <a href="/dial-indicator-helper/privacy.html">Privacy</a>
+                    </nav>
                 </div>
             </div>
+        </header>
 
-            <div class="footer">
-                Contact: <a href="mailto:wangning.engineer@outlook.com">wangning.engineer@outlook.com</a>
-            </div>
+        <main id="main" class="container">
+            <section class="hero">
+                <div class="heroGrid">
+                    <div>
+                        <div class="kicker">
+                            <span class="badge">Offline • No account • No tracking</span>
+                            <span>Metrology helpers for daily shop work</span>
+                        </div>
+                        <h1>Turn dial readings into usable results — instantly.</h1>
+                        <p class="lead">
+                            Dial Indicator Helper helps you practice and use dial-indicator workflows on iPhone: dial, bore gauge, and test
+                            indicator modes; imperial/metric switching; fast “Set Zero”; recorded readings; and computed stats like range,
+                            circular runout, and straightness.
+                        </p>
+
+                        <div class="ctaRow" id="download">
+                            <a
+                                class="btn btnPrimary"
+                                href="https://apps.apple.com/us/app/dial-indicator-helper/id6756481704"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                View on the App Store
+                            </a>
+                            <a class="btn btnGhost" href="#tutorial">See how it works</a>
+                            <a class="btn btnGhost" href="/dial-indicator-helper/support.html">Support</a>
+                        </div>
+                    </div>
+
+                    <div class="heroCard" aria-label="App preview">
+                        <div class="heroCardInner">
+                            <img
+                                class="heroMedia"
+                                src="assets/dial-hero-illustration.webp"
+                                alt="Illustration of a dial indicator workflow on iPhone"
+                                loading="lazy"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="features" class="section">
+                <h2>Built-in modes & calculations</h2>
+                <p>Designed around what you do at the surface plate, the lathe, and the mill.</p>
+
+                <div class="grid3" role="list">
+                    <div class="card" role="listitem">
+                        <h3>Dial mode</h3>
+                        <p>Zero quickly, step readings up/down, and record deltas from the current zero position.</p>
+                    </div>
+                    <div class="card" role="listitem">
+                        <h3>Bore gauge mode</h3>
+                        <p>Use a master ring size reference, record readings, and compute values like circular runout and min inscribed diameter.</p>
+                    </div>
+                    <div class="card" role="listitem">
+                        <h3>Test indicator mode</h3>
+                        <p>Supports angle-based cosine error correction to get a more accurate true value from the indicator reading.</p>
+                    </div>
+                    <div class="card" role="listitem">
+                        <h3>Stats that matter</h3>
+                        <p>Range, average, straightness (least-squares), and circular runout computed from recorded readings.</p>
+                    </div>
+                    <div class="card" role="listitem">
+                        <h3>Imperial & metric</h3>
+                        <p>Toggle units while preserving your existing readings by converting values appropriately.</p>
+                    </div>
+                    <div class="card" role="listitem">
+                        <h3>Offline by design</h3>
+                        <p>No login, no ads, no tracking SDKs. You keep control of your data and workflow.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tutorial" class="section">
+                <h2>Quick tutorial</h2>
+                <p>Example workflow to capture readings and get usable inspection numbers.</p>
+
+                <div class="split">
+                    <div class="figure">
+                        <img
+                            src="assets/dial-screenshot-dial.png"
+                            alt="Dial mode screenshot"
+                            loading="lazy"
+                            onerror="this.style.display='none'"
+                        />
+                        <div class="figcap">Screenshot: Dial mode — add <span class="kbd">assets/dial-screenshot-dial.png</span></div>
+                    </div>
+                    <div class="steps" aria-label="Steps">
+                        <div class="step">
+                            <div class="stepNum">1</div>
+                            <div>
+                                <b>Choose a mode</b>
+                                Dial / Bore / Test — each one matches a real measurement workflow.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepNum">2</div>
+                            <div>
+                                <b>Set units & zero</b>
+                                Toggle Imperial/Metric and tap “Set Zero” to align the digital readout with your baseline.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepNum">3</div>
+                            <div>
+                                <b>Record readings</b>
+                                Save a series of readings as you rotate the part or scan along a surface.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepNum">4</div>
+                            <div>
+                                <b>Read the stats</b>
+                                Range/runout/straightness are computed from your recorded data so you can make a decision quickly.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="split" style="margin-top: 14px">
+                    <div class="figure">
+                        <img
+                            src="assets/dial-screenshot-bore.png"
+                            alt="Bore gauge mode screenshot"
+                            loading="lazy"
+                            onerror="this.style.display='none'"
+                        />
+                        <div class="figcap">Screenshot: Bore gauge — add <span class="kbd">assets/dial-screenshot-bore.png</span></div>
+                    </div>
+                    <div class="figure">
+                        <img
+                            src="assets/dial-screenshot-test.png"
+                            alt="Test indicator mode screenshot"
+                            loading="lazy"
+                            onerror="this.style.display='none'"
+                        />
+                        <div class="figcap">Screenshot: Test indicator — add <span class="kbd">assets/dial-screenshot-test.png</span></div>
+                    </div>
+                </div>
+
+                <div class="split" style="margin-top: 14px">
+                    <div class="figure">
+                        <img
+                            src="assets/dial-screenshot-stats.png"
+                            alt="Statistics screenshot"
+                            loading="lazy"
+                            onerror="this.style.display='none'"
+                        />
+                        <div class="figcap">Screenshot: Stats — add <span class="kbd">assets/dial-screenshot-stats.png</span></div>
+                    </div>
+                    <div class="steps" aria-label="Stats tips">
+                        <div class="step">
+                            <div class="stepNum">1</div>
+                            <div>
+                                <b>Range / Runout</b>
+                                Quickly see the max-min spread from your recorded readings.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepNum">2</div>
+                            <div>
+                                <b>Average</b>
+                                Useful when you want a stable reference value across multiple points.
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="stepNum">3</div>
+                            <div>
+                                <b>Straightness (LSQ)</b>
+                                Least-squares straightness estimate from your scan/sequence of readings.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq" class="section">
+                <h2>FAQ</h2>
+                <div class="faq">
+                    <details>
+                        <summary>Does the app need the internet?</summary>
+                        <p>No. Core functionality works offline.</p>
+                    </details>
+                    <details>
+                        <summary>Does it collect data or track me?</summary>
+                        <p>No developer analytics or tracking SDKs. See <a href="/dial-indicator-helper/privacy.html">Privacy</a>.</p>
+                    </details>
+                    <details>
+                        <summary>Where are my readings stored?</summary>
+                        <p>Readings are kept on-device during use; any saved records (if you choose to save) stay local to your device.</p>
+                    </details>
+                    <details>
+                        <summary>Support / contact</summary>
+                        <p>Email <a href="mailto:wangning.engineer@outlook.com">wangning.engineer@outlook.com</a>.</p>
+                    </details>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Download</h2>
+                <p>Open the App Store page and install on iPhone.</p>
+                <div class="ctaRow" style="margin-top: 12px">
+                    <a
+                        class="btn btnPrimary"
+                        href="https://apps.apple.com/us/app/dial-indicator-helper/id6756481704"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Open App Store
+                    </a>
+                    <a class="btn btnGhost" href="/dial-indicator-helper/support.html">Support page</a>
+                    <a class="btn btnGhost" href="/dial-indicator-helper/privacy.html">Privacy policy</a>
+                </div>
+            </section>
         </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footerRow">
+                    <div class="small">© <span data-year></span> Dial Indicator Helper</div>
+                    <div class="small">
+                        <a href="mailto:wangning.engineer@outlook.com">wangning.engineer@outlook.com</a>
+                        · <a href="/dial-indicator-helper/privacy.html">Privacy</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script defer src="landing.js"></script>
     </body>
 </html>
